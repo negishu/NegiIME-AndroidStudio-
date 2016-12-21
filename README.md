@@ -1,0 +1,1 @@
+# NegiIME-AndroidStudio-
