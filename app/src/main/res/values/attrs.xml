@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2011 OgakiSoft
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <declare-styleable name="InputMethodService">
+        <!-- Background to use for entire input method when it is being
+             shown in fullscreen mode with the extract view, to ensure
+             that it completely covers the application.  This allows,
+             for example, the candidate view to be hidden
+             while in fullscreen mode without having the application show through
+             behind it.-->
+        <attr name="imeFullscreenBackground" format="reference|color" />
+        <!-- Animation to use when showing the fullscreen extract UI after
+             it had previously been hidden. -->
+        <attr name="imeExtractEnterAnimation" format="reference" />
+        <!-- Animation to use when hiding the fullscreen extract UI after
+             it had previously been shown. -->
+        <attr name="imeExtractExitAnimation" format="reference" />
+    </declare-styleable>
+
+    <!-- Window animation class attributes. -->
+    <declare-styleable name="WindowAnimation">
+        <!-- The animation used when a window is being added. -->
+        <attr name="windowEnterAnimation" format="reference" />
+        <!-- The animation used when a window is being removed. -->
+        <attr name="windowExitAnimation" format="reference" />
+    </declare-styleable>
+
+	<!-- Standard orientation constant. -->
+	<attr name="orientation">
+		<!-- Defines an horizontal widget. -->
+		<enum name="horizontal" value="0" />
+		<!-- Defines a vertical widget. -->
+		<enum name="vertical" value="1" />
+	</attr>
+
+	<attr name="InputAreaFrameLayoutStyle" format="reference" />
+	<declare-styleable name="InputAreaFrameLayout">
+		<!-- Width of the stroke used to draw the gesture. -->
+		<attr name="gestureStrokeWidth" format="float" />
+		<!-- Color used to draw a gesture. -->
+		<attr name="gestureColor" format="color" />
+		<!--
+			Color used to draw the user's strokes until we are sure it's a
+			gesture.
+		-->
+		<attr name="uncertainGestureColor" format="color" />
+		<!--
+			Time, in milliseconds, to wait before the gesture fades out after the
+			user is done drawing it.
+		-->
+		<attr name="fadeOffset" format="integer" />
+		<!--
+			Duration, in milliseconds, of the fade out effect after the user is
+			done drawing a gesture.
+		-->
+		<attr name="fadeDuration" format="integer" />
+		<!-- Defines the type of strokes that define a gesture. -->
+		<attr name="gestureStrokeType">
+			<!-- A gesture is made of only one stroke. -->
+			<enum name="single" value="0" />
+			<!-- A gesture is made of multiple strokes. -->
+			<enum name="multiple" value="1" />
+		</attr>
+		<!--
+			Minimum length of a stroke before it is recognized as a gesture.
+		-->
+		<attr name="gestureStrokeLengthThreshold" format="float" />
+		<!--
+			Squareness threshold of a stroke before it is recognized as a
+			gesture.
+		-->
+		<attr name="gestureStrokeSquarenessThreshold" format="float" />
+		<!--
+			Minimum curve angle a stroke must contain before it is recognized as
+			a gesture.
+		-->
+		<attr name="gestureStrokeAngleThreshold" format="float" />
+		<!--
+			Defines whether the overlay should intercept the motion events when a
+			gesture is recognized.
+		-->
+		<attr name="eventsInterceptionEnabled" format="boolean" />
+		<!--
+			Defines whether the gesture will automatically fade out after being
+			recognized.
+		-->
+		<attr name="fadeEnabled" format="boolean" />
+		<!--
+			Indicates whether horizontal (when the orientation is vertical) or
+			vertical (when orientation is horizontal) strokes automatically
+			define a gesture.
+		-->
+		<attr name="orientation" />
+	</declare-styleable>
+    <declare-styleable name="ManageKeyboard">
+        <attr name="Background" format="reference"></attr>
+        <attr name="KeyBackground" format="reference"></attr>
+        <attr name="Width" format="integer|fraction"></attr>
+        <attr name="Height" format="integer|fraction"></attr>
+        <attr name="RowWidth" format="fraction"></attr>
+        <attr name="RowHeight" format="fraction"></attr>
+        <attr name="horizontalGap" format="integer|fraction"></attr>
+        <attr name="verticalGap" format="integer|fraction"></attr>
+        <attr name="KeyHeight" format="integer|fraction" />
+        <attr name="KeyWidth" format="integer|fraction" />
+        </declare-styleable>
+    <declare-styleable name="Keyboard_Row">
+        <attr name="rowEdgeFlags">
+            <!-- Row is anchored to the top of the keyboard -->
+            <flag name="top" value="4" />
+            <!-- Row is anchored to the bottom of the keyboard -->
+            <flag name="bottom" value="8" />
+        </attr>
+    <!-- Above used for CJK-->
+    </declare-styleable>
+    <declare-styleable name="Keyboard_Key">
+        <attr name="codes" format="integer|string" />
+        <attr name="label" format="integer|string" />
+        <attr name="iconpreview" format="reference" />
+        <attr name="x" format="integer" />
+        <attr name="y" format="integer" />
+        <attr name="x_gap" format="integer" />
+        <attr name="y_gap" format="integer" />
+    </declare-styleable>
+</resources>

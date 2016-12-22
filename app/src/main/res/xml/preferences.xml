@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:title="@string/pref_title_01">
+
+		<PreferenceScreen android:key="check_gesture"
+			android:title="@string/pref_check_gesture_title"
+			android:summary="@string/pref_check_gesture_summary"
+			android:persistent="false">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="ogakisoft.android.gesture"
+				android:targetClass="ogakisoft.android.gesture.CheckGestureActivity" />
+		</PreferenceScreen>
+
+		<PreferenceScreen android:key="create_gesture"
+			android:title="@string/pref_create_gesture_title"
+			android:summary="@string/pref_create_gesture_summary"
+			android:persistent="false">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="ogakisoft.android.gesture"
+				android:targetClass="ogakisoft.android.gesture.CreateGestureActivity" />
+		</PreferenceScreen>
+		
+		<PreferenceScreen android:key="download_gesture"
+			android:title="@string/pref_download_gesture_title"
+			android:summary="@string/pref_download_gesture_summary"
+			android:persistent="false">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="ogakisoft.android.gesture"
+				android:targetClass="ogakisoft.android.gesture.DownloadActivity" />
+		</PreferenceScreen>
+		
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/pref_title_02">
+
+		<ogakisoft.android.gesture.EditDigitPreference android:key="@string/pref_gesture_stroke_width_id"
+			android:title="@string/pref_gesture_stroke_width_title"
+			android:summary="@string/pref_gesture_stroke_width_summary"
+			android:dialogTitle="@string/pref_gesture_stroke_width_dialog_title" />
+
+		<ogakisoft.android.gesture.EditDigitPreference android:key="@string/pref_gesture_stroke_lengththreshold_id"
+			android:title="@string/pref_gesture_stroke_lengththreshold_title"
+			android:summary="@string/pref_gesture_stroke_lengththreshold_summary"
+			android:dialogTitle="@string/pref_gesture_stroke_lengththreshold_dialog_title" />
+			
+		<CheckBoxPreference android:key="@string/pref_fadeenabled_id"
+			android:title="@string/pref_fadeenabled_title"
+			android:summary="@string/pref_fadeenabled_summary"
+			android:dialogTitle="@string/pref_fadeenabled_dialog_title" />
+
+		<ogakisoft.android.gesture.EditDigitPreference android:key="@string/pref_fadeoffset_id"
+			android:title="@string/pref_fadeoffset_title"
+			android:summary="@string/pref_fadeoffset_summary"
+			android:dialogTitle="@string/pref_fadeoffset_dialog_title" />
+
+		<CheckBoxPreference android:key="@string/pref_meshenabled_id"
+			android:title="@string/pref_meshenabled_title"
+			android:summary="@string/pref_meshenabled_summary"
+			android:dialogTitle="@string/pref_meshenabled_dialog_title" />
+
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="@string/pref_title_03">
+		<PreferenceScreen android:key="version"
+			android:title="@string/pref_version_title"
+			android:summary=""
+			android:persistent="false">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="ogakisoft.android.gesture"
+				android:targetClass="ogakisoft.android.gesture.VersionActivity" />
+		</PreferenceScreen>
+	</PreferenceCategory>
+	
+</PreferenceScreen>

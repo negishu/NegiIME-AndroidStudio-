@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2011 OgakiSoft
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+	<string name="app_name">Negi Input</string>
+
+	<!-- IME Action in InputMethodService -->
+    <string name="ime_action_go">Go</string>
+    <string name="ime_action_search">Search</string>
+    <string name="ime_action_send">Send</string>
+    <string name="ime_action_next">Next</string>
+    <string name="ime_action_done">Done</string>
+    <string name="ime_action_default">Execute</string>
+
+    <string name="word_separators">\u0020.,;:!?\n()[]*&amp;@{}/&lt;&gt;_+=|&quot;</string>
+    
+    <!-- Key Labels -->
+    <skip />
+    <string name="key_clear">Clear</string>
+    <string name="key_predict">Recog</string>
+    <string name="key_enter">Enter</string>
+    <string name="key_bs">BS</string>
+    <string name="key_ime">IME</string>
+    
+    <!-- Buttons -->
+    <skip />
+    <string name="button_backpage">Prev</string>
+    <string name="button_nextpage">Next</string>
+    <string name="button_recog">Recognize</string>
+    <string name="button_add">Add</string>
+    <string name="button_reload">Reload</string>
+    <string name="button_hide_pad">Hide</string>
+    <string name="button_show_pad">Show</string>
+    <string name="button_close">Close</string>
+    <string name="button_clear">Clear</string>
+    <string name="button_save">Save</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_go">Go</string>
+    <string name="button_edit">Edit</string>
+    <string name="button_delete">Del</string>
+
+    <!--  Labels -->
+    <skip />
+    <string name="rename_action">OK</string>
+    <string name="cancel_action">Cancel</string>
+    <string name="close_action">Close</string>
+    <string name="gestures_delete">Delete</string>
+    <string name="prompt_gesture_name">String</string>
+    <string name="gestures_rename">Change Assign String</string>
+    <string name="gestures_rename_title">Change Assign String</string>
+    <string name="gestures_rename_label">String</string>
+    <string name="gestures_modify">Change Gesture</string>
+
+	<!-- Preferences -->
+	<skip/>
+	<string name="pref_title">Setting</string>
+	<string name="pref_title_01">Gesture Data</string>
+	<string name="pref_check_gesture_title">Check Gestures</string>
+	<string name="pref_check_gesture_summary"></string>
+	<string name="pref_create_gesture_title">Create a Gesture</string>
+	<string name="pref_create_gesture_summary"></string>
+	<string name="pref_download_gesture_title">Download Gestures</string>
+	<string name="pref_download_gesture_summary"></string>
+	
+	<string name="pref_title_02">Gesturing</string>
+	<string name="pref_gesture_stroke_width_title">Stroke Width</string>
+	<string name="pref_gesture_stroke_width_summary" />
+	<string name="pref_gesture_stroke_width_dialog_title">Stroke Width</string>
+	<string name="pref_gesture_stroke_width_id">gesture_stroke_width</string>
+	
+	<string name="pref_gesture_stroke_lengththreshold_title">Stroke Length Threshold</string>
+	<string name="pref_gesture_stroke_lengththreshold_summary" />
+	<string name="pref_gesture_stroke_lengththreshold_dialog_title">Stroke Length Threshold</string>
+	<string name="pref_gesture_stroke_lengththreshold_id">gesture_stroke_length_threshold</string>
+
+	<string name="pref_fadeenabled_title">Fade Enabled</string>
+	<string name="pref_fadeenabled_summary">Fade-out, erasing gesture</string>
+	<string name="pref_fadeenabled_dialog_title">Fade Enabled</string>
+	<string name="pref_fadeenabled_id">fade_enabled</string>
+	
+	<string name="pref_fadeoffset_title">Fade Offset (ms)</string>
+	<string name="pref_fadeoffset_summary">Time before erasing gesture</string>
+	<string name="pref_fadeoffset_dialog_title">Fade Offset (ms)</string>
+	<string name="pref_fadeoffset_id">fade_offset</string>
+
+	<string name="pref_meshenabled_title">Mesh Enabled</string>
+	<string name="pref_meshenabled_summary">Display mesh in the gesture-area</string>
+	<string name="pref_meshenabled_dialog_title">Mesh Enabled</string>
+	<string name="pref_meshenabled_id">mesh_enabled</string>
+
+	<string name="pref_boolean_true">YES</string>
+	<string name="pref_boolean_false">NO</string>
+	
+	<string name="pref_title_03">About</string>
+	<string name="pref_version_title">Version</string>
+
+
+	<!--  Messages -->
+	<skip/>	
+    <string name="message_prompt_download">Nothing data, Download data via http ?</string>
+    <string name="message_downloading">Loading gestures via http...</string>
+    <string name="message_download_success">Download finished</string>
+    <string name="message_loading">Loading gestures...</string>
+    <string name="message_save_success">Gesture saved %s</string>
+<!--    <string name="error_loading">Could not load %s. Make sure you have a mounted SD card.</string>-->
+    <string name="message_delete_success">Gesture deleted</string>
+    <string name="message_gesture_click">Shows the gesture if tap on the character.</string>
+    <string name="message_gesture_longclick">Shows the dialog if long click (click and hold for a few seconds).</string>
+    
+    <string name="error_sdcard">Could not access SD card.</string>
+    <string name="error_download">Error raised, please check log-file</string>
+    <string name="error_file_read">Can not read %s</string>
+    <string name="error_file_write">Can not write %s</string>
+	<string name="error_save_gesture">Can not save gestures</string>
+    <string name="error_illegal_value">Illegal value of %s</string>
+<!--    <string name="error_remove_predefined_data">Can not change the pre-registered data</string>-->
+
+	<!--  Version -->
+	<string name="version">
+Negi Input for android @@
+Version: 0.0.1 @
+	</string>
+
+</resources>

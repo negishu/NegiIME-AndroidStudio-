@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <!-- Base style for animations.  This style specifies no animations. -->
+    <style name="Animation">
+        <item name="windowEnterAnimation">@anim/input_method_fancy_enter</item>
+        <item name="windowExitAnimation">@anim/input_method_fancy_exit</item>
+    </style>
+    <!-- Window animations that are applied to input method overlay windows. -->
+    <style name="Animation.InputMethod">
+        <item name="windowEnterAnimation">@anim/input_method_fancy_enter</item>
+        <item name="windowExitAnimation">@anim/input_method_fancy_exit</item>
+    </style>
+    <!-- Special optional fancy IM animations. @hide -->
+    <style name="Animation.InputMethodFancy">
+        <item name="windowEnterAnimation">@anim/input_method_fancy_enter</item>
+        <item name="windowExitAnimation">@anim/input_method_fancy_exit</item>
+    </style>
+    <style name="Keyboard">
+        <item name="Background">@drawable/keyboardbackground</item>
+        <item name="KeyBackground">@drawable/privatekeyboardbackground</item>
+    </style>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2011 OgakiSoft
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+	<string name="app_name">Gesture IME</string>
+
+	<!-- IME Action in InputMethodService -->
+    <string name="ime_action_go">行く</string>
+    <string name="ime_action_search">検索</string>
+    <string name="ime_action_send">送信</string>
+    <string name="ime_action_next">次へ</string>
+    <string name="ime_action_done">終了</string>
+    <string name="ime_action_default">実行</string>
+
+    <string name="word_separators">\u0020.,;:!?\n()[]*&amp;@{}/&lt;&gt;_+=|&quot;</string>
+    
+    <!-- Key Labels -->
+    <skip />
+    <string name="button_backpage">前ページ</string>
+    <string name="button_nextpage">次ページ</string>
+    <string name="key_clear">消去</string>
+    <string name="key_predict">認識</string>
+    <string name="key_enter">Enter</string>
+    <string name="key_bs">BS</string>
+    <string name="key_ime">IME</string>
+    
+    <!-- Buttons -->
+    <skip />
+    <string name="button_recog">認識</string>
+    <string name="button_add">追加</string>
+    <string name="button_reload">再読込</string>
+    <string name="button_hide_pad">隠す</string>
+    <string name="button_show_pad">表示</string>
+    <string name="button_close">閉じる</string>
+    <string name="button_clear">消去</string>
+    <string name="button_save">保存</string>
+    <string name="button_cancel">キャンセル</string>
+    <string name="button_go">実行</string>
+    <string name="button_edit">変更</string>
+    <string name="button_delete">削除</string>
+    
+    <!--  Labels -->
+    <skip />
+    <string name="rename_action">了解</string>
+    <string name="cancel_action">キャンセル</string>
+    <string name="close_action">閉じる</string>
+    <string name="gestures_delete">削除</string>
+    <string name="prompt_gesture_name">割当文字列</string>
+    <string name="gestures_rename">割当文字列の変更</string>
+    <string name="gestures_rename_title">割当文字列の変更</string>
+    <string name="gestures_rename_label">割当文字列</string>
+    <string name="gestures_modify">ジェスチャー変更</string>
+
+	<!-- Preferences -->
+	<skip/>
+	<string name="pref_title">ジェスチャー設定</string>
+	<string name="pref_title_01">データ</string>
+	<string name="pref_check_gesture_title">ジェスチャー確認</string>
+	<string name="pref_check_gesture_summary"></string>
+	<string name="pref_create_gesture_title">ジェスチャー登録</string>
+	<string name="pref_create_gesture_summary"></string>
+	<string name="pref_download_gesture_title">データのダウンロード</string>
+	<string name="pref_download_gesture_summary"></string>
+	
+	<string name="pref_title_02">ジェスチャー</string>
+	<string name="pref_gesture_stroke_width_title">ストローク幅</string>
+	<string name="pref_gesture_stroke_width_summary" />
+	<string name="pref_gesture_stroke_width_dialog_title">ストローク幅</string>
+	<string name="pref_gesture_stroke_width_id">gesture_stroke_width</string>
+	
+	<string name="pref_gesture_stroke_lengththreshold_title">ストローク長の閾値</string>
+	<string name="pref_gesture_stroke_lengththreshold_summary" />
+	<string name="pref_gesture_stroke_lengththreshold_dialog_title">ストローク長の閾値</string>
+	<string name="pref_gesture_stroke_lengththreshold_id">gesture_stroke_length_threshold</string>
+
+	<string name="pref_fadeenabled_title">フェードアウト</string>
+	<string name="pref_fadeenabled_summary">ジェスチャーの自動消去</string>
+	<string name="pref_fadeenabled_dialog_title">フェードアウト</string>
+	<string name="pref_fadeenabled_id">fade_enabled</string>
+	
+	<string name="pref_fadeoffset_title">フェードアウト時間(ms)</string>
+	<string name="pref_fadeoffset_summary">自動消去までの時間</string>
+	<string name="pref_fadeoffset_dialog_title">フェードアウト時間(ms)</string>
+	<string name="pref_fadeoffset_id">fade_offset</string>
+
+	<string name="pref_meshenabled_title">ジェスチャー領域の枠線</string>
+	<string name="pref_meshenabled_summary"></string>
+	<string name="pref_meshenabled_dialog_title">ジェスチャー領域の枠線</string>
+	<string name="pref_meshenabled_id">mesh_enabled</string>
+
+	<string name="pref_boolean_true">はい</string>
+	<string name="pref_boolean_false">いいえ</string>
+	
+	<string name="pref_title_03">このアプリについて</string>
+	<string name="pref_version_title">バージョン情報</string>
+	
+	<!--  Messages -->
+	<skip/>	
+    <string name="message_prompt_download">ジェスチャーデータをダウンロードしますか？</string>
+    <string name="message_downloading">ジェスチャーデータをダウンロード中...</string>
+    <string name="message_download_success">ダウンロードが終了しました</string>
+    <string name="message_loading">ジェスチャーのロード中...</string>
+    <string name="message_save_success">保存しました(%s)</string>
+<!--    <string name="error_loading">(%s)はロードできません．SDカードが準備できていないようです</string>-->
+    <string name="message_delete_success">ジェスチャーを削除しました</string>
+    <string name="message_gesture_click">文字をタップすればジェスチャーを表示します</string>
+    <string name="message_gesture_longclick">長押しすればダイアログを表示します</string>
+    
+    <string name="error_sdcard">SDカードにアクセスできません</string>
+    <string name="error_download">ダウンロード中にエラーが発生しました</string>
+    <string name="error_file_read">ファイルが読めません(%s)</string>
+    <string name="error_file_write">ファイルに書けません(%s)</string>
+	<string name="error_save_gesture">保存できませんでした</string>
+    <string name="error_illegal_value">値が不正です(%s)</string>
+<!--    <string name="error_remove_predefined_data">事前登録済のため変更できません</string>-->
+
+	<!--  Version -->
+	<string name="version">
+	</string>
+
+</resources>
