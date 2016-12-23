@@ -2,7 +2,6 @@ Input Method Editor on Android.
 ===
 Prerequisites
 ---
-librime is tested to work on Windows with the following build tools and libraries:
   - [Android Studio 2.2](https://developer.android.com/studio/index.html)
   
 Get the code
